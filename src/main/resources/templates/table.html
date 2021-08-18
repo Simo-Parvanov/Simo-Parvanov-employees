@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>The most industrious employees in the company</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Employee ID #1</th>
+        <th>Employee ID #2</th>
+        <th>Project ID</th>
+        <th>Days worked</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="employee : ${bestEmployees}">
+        <td th:text="${employee.empIdOne}">Employee ID #1</td>
+        <td th:text="${employee.empIdTwo}">Employee ID #2</td>
+        <td th:text="${employee.projectId}">Project ID</td>
+        <td th:text="${employee.allDays}">Days worked</td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <span>
+        <a href="/">BACK</a>
+    </span>
+</div>
+</body>
+</html>
